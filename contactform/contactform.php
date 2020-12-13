@@ -17,7 +17,7 @@ $message .= "Mensaje: ".$mensaje."\r\n";
 $message .= "Enviado el: ".date('d/m/Y',time());
 
 
-$para = 'edielectronica@hotmail.com';
+$para = 'atencion_clientes@magsilelektro.com';
 $asunto = 'Quiero contactar con Magsil Elektro';
 
 if(mail($para,$asunto,utf8_decode($message),$header)){
