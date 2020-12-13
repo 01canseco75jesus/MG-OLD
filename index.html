@@ -2,89 +2,102 @@
 <html lang="es">
 
 <head>
-
     <meta charset="utf-8">
-    <title>Magsil Elektro | Mantenimiento y diseño de equipo electrónico.</title>
+    <title>Magsil Elektro | Mantenimiento y dise&ntilde;o de equipo electr&oacute;nico.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--    Palabras clave para el SEO de los buscadores y descripción en buscadores-->
+    <!-- Palabras clave para el SEO de los buscadores y descripción en buscadores-->
+
     <meta name="keywords" content="Electronica, MagsilElektro, Reparaciones electricas">
     <meta name="description" content="">
+    <!-- Facebook Open Graph integration Tarjetas FB: https://developers.facebook.com/docs/sharing/opengraph-->
 
-
-    <!-- Facebook Open Graph integration Tarjetas FB: https://developers.facebook.com/docs/sharing/opengraph -->
     <meta property="og:title" content="Magsil Elektro">
     <meta property="og:image" content="">
-    <meta property="og:url" content="www.magsilelektro.com">
+    <meta property="og:url" content="https://magsilelektro.com">
     <meta property="og:site_name" content="Magsil Elektro">
     <meta property="og:description" content="">
-
     <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
+    <meta name="twitter:card" content="Magsil Elektro">
+    <meta name="twitter:site" content="https://magsilelektro.com">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
-
     <!-- Icon Window -->
-
-    <link rel="icon" type="image/png" href="img/logo.png" />
-
+    <link href="img/logo.png" rel="icon" type="image/png" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
     <!-- Bootstrap CSS File -->
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet" />
     <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate-css/animate.min.css" rel="stylesheet" />
     <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <style type="text/css">
+        .section-description {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card-body {
+            text-align: center !important;
+        }
+
+        @media screen and (max-width:768px) and (min-width:767px) {
+            .card-img-top {
+                height: 200px !important;
+            }
+        }
+
+        @media screen and (max-width:424px) {
+            .card-img-top {
+                height: 200px !important;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
     <div id="preloader"></div>
-
     <!--=====
   Hero Section
   ============================-->
+
     <section id="hero">
         <div class="hero-container">
             <div class="wow fadeIn">
-                <div class="hero-logo">
-
-                </div>
+                <div class="hero-logo"></div>
 
                 <h1>Magsil Elektro</h1>
-                <h2> <span class="rotating">Sobrio, Virtuoso, Elegante </span> ponemos el control de la energía al alcance de tus manos</h2>
-                <div class="actions">
-                    <a href="#about" class="btn-get-started">Conoce nuestra marca</a>
-                    <a href="#portfolio" class="btn-services">Conoce nuestros productos</a>
-                </div>
+
+                <h2><span class="rotating">Sobrio, Virtuoso, Elegante </span> ponemos el control de la energ&iacute;a al alcance de tus manos</h2>
+
+                <div class="actions"><a class="btn-get-started" href="#about">Conoce nuestra marca</a> <a class="btn-services" href="#portfolio">Conoce nuestros productos</a></div>
             </div>
         </div>
     </section>
-
     <!--==========================
   Sección de encabezado
   ============================-->
+
     <header id="header">
         <div class="container">
-            <div id="logo">
-                <a href="#hero">
-                    <img class="rounded-circle" src="img/logo.png" alt="logo" />
-                    Magsil <small style="color: beige; margin-left: -10px">Elektro</small>
-                </a>
-            </div>
-
+            <div id="logo"><a href="#hero"><img alt="logo" class="rounded-circle" src="img/logo.png" /> Magsil <small style="color: beige; margin-left: -10px">Elektro</small> </a></div>
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li class="menu-active"><a class="logInMenu" href="#hero">Bienvenido</a></li>
                     <li><a href="#about">Nuestra Marca</a></li>
                     <li><a href="#services">Servicios</a></li>
-                    <li><a href="#portfolio">Productos</a></li>
-                    <li><a href="#team">Puntos de venta</a></li>
+                    <li class="menu-has-children"><a href="#portfolio">Productos</a>
+                        <ul>
+                            <li><a href="#portfolio">LineaVRT</a></li>
+                            <li><a href="productos.html">Ver m&aacute;s informaci&oacute;n y transformadores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">&iquest;D&oacute;nde comprar?</a></li>
                     <li><a href="#contact">Contactanos</a></li>
                 </ul>
             </nav>
@@ -92,289 +105,255 @@
         </div>
     </header>
     <!-- #header -->
-
-
-
     <!--SLIDES
   ============================-->
+
     <div id="bienvenido">
         <h3 class="section-title">Bienvenido a <span>MagsilElektro.com</span></h3>
     </div>
+
     <div class="bus">
-        <div class="container-all">
-            <input type="radio" id="1" name="image-slide" hidden />
-            <input type="radio" id="2" name="image-slide" hidden />
-            <input type="radio" id="3" name="image-slide" hidden />
-
+        <div class="container-all"><input hidden="" id="1" name="image-slide" type="radio" /> <input hidden="" id="2" name="image-slide" type="radio" /> <input hidden="" id="3" name="image-slide" type="radio" />
             <div class="slide">
-                <div class="item-slide">
-                    <img src="img/img1.jpg">
-                </div>
+                <div class="item-slide"><img src="img/image%20(1)10802.jpg" /></div>
 
-                <div class="item-slide">
-                    <img src="img/img2.jpg">
-                </div>
+                <div class="item-slide"><img src="img/img2.jpg" /></div>
 
-                <div class="item-slide">
-                    <img src="img/img3.jpg">
-                </div>
+                <div class="item-slide"><img src="img/image1080.png" /></div>
             </div>
 
-            <div class="pagination">
-
-                <label class="pagination-item" for="1">
-                    <img src="img/img1.jpg">
-                </label>
-
-                <label class="pagination-item" for="2">
-                    <img src="img/img2.jpg">
-                </label>
-
-                <label class="pagination-item" for="3">
-                    <img src="img/img3.jpg">
-                </label>
-            </div>
+            <div class="pagination"><label class="pagination-item" for="1"><img src="img/image1.png" /> </label> <label class="pagination-item" for="2"> <img src="img/img2.jpg" /> </label> <label class="pagination-item" for="3"> <img src="img/IMG_2%20(2).JPG" /> </label></div>
         </div>
     </div>
-
     <!--==========================
   About Section
   ============================-->
+
     <section id="about">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Nuestra Marca</h3>
+
                     <div class="section-title-divider"></div>
-                    <p class="section-description">Transformadores de alta calidad, eficientes, seguros
-                        a precios accesibles, adaptados a tus necesidades…</p>
+
+                    <p class="section-description">Transformadores de alta calidad, eficientes, seguros a precios accesibles, adaptados a tus necesidades&hellip;</p>
                 </div>
             </div>
         </div>
+
         <div class="container about-container wow fadeInUp">
-
-
             <div class="row">
-
-                <div id="img-marca" class="col-md-6 col-xl-6">
-                    <figure>
-                        <img src="img/about-img.jpg" alt="ME">
-                    </figure>
+                <div class="col-md-6 col-xl-6" id="img-marca">
+                    <figure><img alt="ME" src="img/about-img.jpg" /></figure>
                 </div>
 
                 <div class="col-md-6 col-xl-6 about-content">
-                    <h2 class="about-title">Filosofía</h2>
-                    <p class="about-text">
-                        MAGSIL ELEKTRO, es una empresa con alto sentido humano, responsable, con
-                        principios éticos y morales que busca con cada uno de sus proyectos y en colaboración
-                        con su fuerza de trabajo, ofrecer a sus clientes los mejores transformadores de control.
+                    <h2 class="about-title">Filosof&iacute;a</h2>
 
-                    </p>
-                    <h2 class="about-title">Misión</h2>
-                    <p class="about-text">
-                        Marcar la diferencia en la industria eléctrica, brindando al mercado un transformador
-                        durable, potente, versátil y de alta calidad, fabricados con estándares internacionales y
-                        con técnicas electromagnéticas de vanguardia que cuenten con especificaciones técnicas
-                        accesibles al cliente.
-                    </p>
-                    <h2 class="about-title">Visión</h2>
-                    <p class="about-text">
-                        Ser una empresa con sensibilidad humana, a través de un equipo único de trabajo, para
-                        garantizar siempre a los clientes productos que satisfagan sus necesidades en el ámbito
-                        de la industria eléctrica debido al desarrollo tecnológico, a través de nuevas técnicas que
-                        involucren como eje principal al electromagnetismo, cuidando el balance costo-beneficio.
-                    </p>
+                    <p class="about-text">MAGSIL ELEKTRO, es una empresa con alto sentido humano, responsable, con principios &eacute;ticos y morales que busca con cada uno de sus proyectos y en colaboraci&oacute;n con su fuerza de trabajo, ofrecer a sus clientes los mejores transformadores de control.</p>
+
+                    <h2 class="about-title">Misi&oacute;n</h2>
+
+                    <p class="about-text">Marcar la diferencia en la industria el&eacute;ctrica, brindando al mercado un transformador durable, potente, vers&aacute;til y de alta calidad, fabricados con est&aacute;ndares internacionales y con t&eacute;cnicas electromagn&eacute;ticas de vanguardia que cuenten con especificaciones t&eacute;cnicas accesibles al cliente.</p>
+
+                    <h2 class="about-title">Visi&oacute;n</h2>
+
+                    <p class="about-text">Ser una empresa con sensibilidad humana, a trav&eacute;s de un equipo &uacute;nico de trabajo, para garantizar siempre a los clientes productos que satisfagan sus necesidades en el &aacute;mbito de la industria el&eacute;ctrica debido al desarrollo tecnol&oacute;gico, a trav&eacute;s de nuevas t&eacute;cnicas que involucren como eje principal al electromagnetismo, cuidando el balance costo-beneficio.</p>
+
                     <h2 class="about-title">Acerca de Magsil</h2>
-                    <p class="about-text">
-                        La marca de Magsil electro es reconocida en el mercado, contamos con el respaldo de empresas como GS electronics y Altech corp.
-                        <br>Magsil Electro es propiedad intelectual del ingeniero electrónico Edie Rubén Quiñones Salas, quien es autor del desarrollo e innovación de los equipos.
-                    </p>
 
+                    <p class="about-text">La marca de Magsil electro es reconocida en el mercado, contamos con el respaldo de empresas como GS electronics y Altech corp.<br />
+                        Magsil Electro es propiedad intelectual del ingeniero electr&oacute;nico Edie Rub&eacute;n Qui&ntilde;ones Salas, quien es autor del desarrollo e innovaci&oacute;n de los equipos.</p>
                 </div>
             </div>
-
         </div>
     </section>
-
     <!--==========================
   Services Section
   ============================-->
+
     <section id="services">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Nuestros Servicios</h3>
+
                     <div class="section-title-divider"></div>
+
                     <p class="section-description">Oferta y demanda de productos y servicios | Magsil Elektro |</p>
                 </div>
             </div>
 
             <div class="row">
-
                 <div class="col-md-12 service-item">
-                    <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+                    <div class="service-icon"></div>
+
                     <h4 class="service-title"><a href="">Oferta y demanda</a></h4>
-                    <p class="service-description">Ofrece una gama de productos dirigidos al mercado energético como transformadores de control y sus derivados de inducción magnética, con lineas estandarizadas y personalizadas, así como servicios afines que se dirigen a la construcción de tableros industriales que hacen eficiente el uso de la energía.</p>
+
+                    <p class="service-description">Ofrece una gama de productos dirigidos al mercado energ&eacute;tico como transformadores de control y sus derivados de inducci&oacute;n magn&eacute;tica, con lineas estandarizadas y personalizadas, as&iacute; como servicios afines que se dirigen a la construcci&oacute;n de tableros industriales que hacen eficiente el uso de la energ&iacute;a.</p>
                 </div>
 
-
-
-
-
-
                 <div class="col-md-12 service-item">
-                    <div class="service-icon"><i class="fa fa-road"></i></div>
-                    <h4 class="service-title"><a href="">Normativas de los Productos:</a></h4>
+                    <div class="service-icon"></div>
+
+                    <h4 class="service-title"><a href="">Normativas por las cuales se fabrican nuestros productos:</a></h4>
+
                     <div class="normas text-center">
                         <ul>
                             <li><a href="https://webstore.iec.ch/publication/26261">NORMA IEC DONDE COMPRAR PARTE 1:</a></li>
                             <li><a href="https://webstore.iec.ch/publication/5600">NORMA IEC DONDE COMPRAR PARTE 2-20:</a></li>
                             <li><a href="https://standards.globalspec.com/std/10267419/ul-5085-1">NORMA UL 5085-1 DONDE COMPRAR:</a></li>
-                            <li><a href="https://studylib.net/doc/18616630/5085-1-low-voltage-transformers-%E2%80%93-part-1--general-require...">NORMA UL 5085-1 TRANSFORMADORES DE BAJA TENSIÓN:</a>
-                            </li>
+                            <li><a href="https://studylib.net/doc/18616630/5085-1-low-voltage-transformers-%E2%80%93-part-1--general-require...">NORMA UL 5085-1 TRANSFORMADORES DE BAJA TENSI&Oacute;N:</a></li>
                         </ul>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </section>
     <!--==========================
   Catalogo Section
   ============================-->
+
     <section id="portfolio">
-        <div class="container wow fadeInUp">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Catalogo</h3>
-                    <div class="section-title-divider"></div>
-                    <p class="section-description">Lineas de transformadores, más recientes</p>
+        <div class="container">
+            <div class="row mx-2">
+                <div class="col-md-12 my-4">
+                    <h3 class="section-title">Instructivos y datos t&eacute;cnicos | Magsil Elektro</h3>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/VRT050-027.jpg);" href="javascript:vrt050()">
-                        <div class="details">
-                            <h4>VRT050</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
+
+                <div class="col-md-6 my-2 px-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Transformadores por potencia y protecci&oacute;n con fusibles.</h5>
+                            <a class="btn btn-dark" href="https://drive.google.com/file/d/1qLgawGB5zOICYaFl98qsj8_bbv8rTt-7/view?usp=sharing">Descargar Lista</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/VRT075.jpg);" href="">
-                        <div class="details">
-                            <h4>VRT 075</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/VRT150.jpg);" href="">
-                        <div class="details">
-                            <h4>VRT 150</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/vrt200.jpg);" href="javascript:vrt200()">
-                        <div class="details">
-                            <h4>VRT200</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/VRT300.jpg);" href="">
-                        <div class="details">
-                            <h4>VRT300</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/VRT750.jpg);" href="">
-                        <div class="details">
-                            <h4>VRT 750</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-5">
-                    <a class="portfolio-item" style="background-image: url(img/VRT1000.png);" href="">
-                        <div class="details">
-                            <h4>VRT 1000</h4>
-                            <span>Nueva linea de transformadores,
-                                click para más información</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-3 offset-md-2" style="border-radius: 30px">
-
-                    <div style="text-align: center">
-                        <br><br><br><br>
-
-                        <a class="btn btn-dark" href="productos.html">Más información</a>
-
-                        <img src="img/icons8-expand-arrow-64.png" alt="">
                     </div>
                 </div>
 
+                <div class="col-md-6 my-2 px-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">&iquest;C&oacute;mo proteger mi transformador?</h5>
+                            <a class="btn btn-dark" href="https://drive.google.com/file/d/1rkoMuB5AUKhOoU1wDuojEU3Mi8xBwjbq/view?usp=sharing">Descargar Instructivo</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-12 my-4">
+                    <h3 class="section-title">Especificaciones t&eacute;cnicas de los transformadores</h3>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/50505.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 050</h5>
+                            <a class="btn btn-dark" href="https://i.imgur.com/1DofMfB.jpg">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/VRT075.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 075</h5>
+                            <a class="btn btn-dark" href="https://i.imgur.com/abP0pGa.png">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/VRT150.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 150</h5>
+                            <a class="btn btn-dark" href="https://drive.google.com/file/d/1wRMld9tLQZ-00LnjLFxF1tss22pEVi3D/view?usp=sharing">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/vrt200.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 200</h5>
+                            <a class="btn btn-dark" href="#">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/VRT300.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 300</h5>
+                            <a class="btn btn-dark" href="https://drive.google.com/file/d/1MeSia_RGNXT1JyZP_Zr6QXGw7nAEf9Zi/view?usp=sharing">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/VRT750.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 750</h5>
+                            <a class="btn btn-dark" href="https://drive.google.com/file/d/172Ha0JSy7LF_KuHxCKMRoovxey1jwwE6/view?usp=sharing">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/VRT1000.png" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 1000</h5>
+                            <a class="btn btn-dark" href="https://i.imgur.com/Hq3XjYR.png">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 2000</h5>
+                            <a class="btn btn-dark" href="https://i.imgur.com/JhdtM3l.png">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2 px-2">
+                    <div class="card"><img alt="Card image cap" class="card-img-top" height="300px" src="img/VRT050-030.jpg" />
+                        <div class="card-body">
+                            <h5 class="card-title">VRT 3000</h5>
+                            <a class="btn btn-dark" href="https://i.imgur.com/ygd5czO.jpg">Ver especificaciones</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="row">
-        <div id="hidden-info" class="col-md-6">
-            <div class="cerrar"> <a href="javascript:cerrar()"><img src="img/icons8-cerrar-ventana-48.png" alt="Tap to close"></a> </div>
-            <div id="detailsP" class="hidden text-left">
+        <div class="col-md-6" id="hidden-info">
+            <div class="cerrar"><a href="javascript:cerrar()"><img alt="Tap to close" src="img/icons8-cerrar-ventana-48.png" /></a></div>
 
+            <div class="hidden text-left" id="detailsP">
                 <h2>Aplicaciones (VRT050)</h2>
-                <ul>
-                    <li>En tableros de control que requieran
-                        flexibilidad para cambiar fácilmente los
-                        voltajes de alimentación.</li>
-                    <li>Donde se requiera alimentación a circuitos
-                        de control de 220V o 110V a partir de 440V
-                        o 220V.</li>
-                    <li>Para alimentar cargas reactivas como
-                        contactores, relevadores, ventiladores,
-                        solenoides, etc.</li>
-                    <li>Uso como transformador de aislamiento
-                        para alimentar cargas sensibles a
-                        disturbios eléctricos en las líneas de
-                        fuerza.</li>
-                </ul>
 
+                <ul>
+                    <li>En tableros de control que requieran flexibilidad para cambiar f&aacute;cilmente los voltajes de alimentaci&oacute;n.</li>
+                    <li>Donde se requiera alimentaci&oacute;n a circuitos de control de 220V o 110V a partir de 440V o 220V.</li>
+                    <li>Para alimentar cargas reactivas como contactores, relevadores, ventiladores, solenoides, etc.</li>
+                    <li>Uso como transformador de aislamiento para alimentar cargas sensibles a disturbios el&eacute;ctricos en las l&iacute;neas de fuerza.</li>
+                </ul>
             </div>
         </div>
     </div>
-
-
-
     <!--==========================
   Proovedores Section
   ============================-->
+
     <section id="team">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Puntos de venta</h3>
+                    <h3 class="section-title">&iquest;D&oacute;nde comprar?</h3>
+
                     <div class="section-title-divider"></div>
                 </div>
             </div>
@@ -382,143 +361,108 @@
             <div class="row mt-4">
                 <div class="col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="https://altechmexico.com.mx/images/altechcorp2.png" alt="altech"></div>
-                        <h4> <a href="https://www.altechmexico.com">Altech México</a></h4>
+                        <div class="pic"><img alt="altech" src="https://altechmexico.com.mx/images/altechcorp2.png" /></div>
 
-                        <div class="social">
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-google-plus"></i></a>
+                        <h4><a href="https://www.altechmexico.com">Altech M&eacute;xico</a></h4>
 
-                        </div>
+                        <div class="social"></div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="member">
-                        <div class="pic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_W8O349iMwtuTEqluvQmu5XzEDDCb6dnvTw&usqp=CAU" alt="GS"></div>
+                        <div class="pic"><img alt="GS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_W8O349iMwtuTEqluvQmu5XzEDDCb6dnvTw&amp;usqp=CAU" /></div>
+
                         <h4><a href="https://">GS Equipos y Controles</a></h4>
 
-                        <div class="social">
-                            <a href=""><i class="fa fa-twitter"></i></a>
-                            <a href=""><i class="fa fa-facebook"></i></a>
-                            <a href=""><i class="fa fa-google-plus"></i></a>
-
-                        </div>
+                        <div class="social"></div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </section>
-
     <!--==========================
   Contact Section
   ============================-->
+
     <section id="contact">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Contactanos</h3>
-                    <div class="section-title-divider"></div>
 
+                    <div class="section-title-divider"></div>
                 </div>
             </div>
 
-            <div id="info-contact" class="row">
+            <div class="row" id="info-contact">
                 <div class="col-md-3 offset-md-1">
                     <div class="info">
                         <div>
-                            <i class="fa fa-map-marker"></i>
-                            <p>Col San Felipe Hueyotiplan, 72030<br>Puebla, Pue</p>
+                            <p>Col San Felipe Hueyotiplan, 72030<br />
+                                Puebla, Pue</p>
                         </div>
 
                         <div>
-                            <i class="fa fa-envelope"></i>
-                            <p>edielectronica@hotmail.com</p>
+                            <p>atencion_clientes@magsilelektro.com</p>
                         </div>
 
                         <div>
-                            <i class="fa fa-phone"></i>
                             <p>222 898 7922</p>
                         </div>
-
                     </div>
                 </div>
 
                 <div class="col-md-5 offset-md-2">
                     <div class="form">
                         <div id="sendmessage">Tu mensaje fue enviado correctamente.</div>
+
                         <div id="errormessage">Hubo un error con el envio, favor de contactar al desarrollador</div>
-                        <form action="" method="post" role="form" class="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
+
+                        <form action="" class="contactForm" method="post" role="form">
+                            <div class="form-group"><input class="form-control" data-msg="Por favor ingrese al menos 4 caracteres" data-rule="minlen:4" id="name" name="name" placeholder="Su nombre" type="text" />
                                 <div class="validation"></div>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Su email" data-rule="email" data-msg="Ingresa un Correo Valido" />
+
+                            <div class="form-group"><input class="form-control" data-msg="Ingresa un Correo Valido" data-rule="email" id="email" name="email" placeholder="Su email" type="email" />
                                 <div class="validation"></div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="No. Celular" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 caracteres del tema" />
+
+                            <div class="form-group"><input class="form-control" data-msg="Por favor ingrese al menos 8 caracteres del tema" data-rule="minlen:4" id="subject" name="subject" placeholder="No. Celular" type="text" />
                                 <div class="validation"></div>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escribe algo para nosotros" placeholder="Su mensaje"></textarea>
+
+                            <div class="form-group"><textarea class="form-control" data-msg="Por favor escribe algo para nosotros" data-rule="required" name="message" placeholder="Su mensaje" rows="5"></textarea>
+
                                 <div class="validation"></div>
                             </div>
+
                             <div class="text-center"><button type="submit">Enviar mensaje</button></div>
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
     <!--==========================
   Footer
 ============================-->
+
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="copyright">
-                        &copy; Copyright <strong>Magsil Elektro</strong>. All Rights Reserved
-                    </div>
-                    <div class="credits">
+                    <div class="copyright">&copy; Copyright <strong>Magsil Elektro</strong>. All Rights Reserved</div>
 
-                        Templates by <a href="https://www.youtube.com/channel/UCXIWGoXj-GXHJjMVwbzv3FQ?view_as=subscriber">Will Canseco</a>
-                    </div>
+                    <div class="credits">Developed by <a href="https://www.instagram.com//">WereverWilson</a></div>
                 </div>
 
                 <div class="col-md-6">
-
-                    <div class="social-nt">
-                        <a href="#">
-                            <i class="icon-facebook2"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon-twitter"></i>
-                        </a>
-
-                    </div>
-
+                    <div class="social-nt"></div>
                 </div>
             </div>
-
-
         </div>
     </footer>
-
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
     <!-- Required JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -527,12 +471,9 @@
     <script src="lib/morphext/morphext.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/stickyjs/sticky.js"></script>
-    <script src="lib/easing/easing.js"></script>
-
-    <!-- Template Specisifc Custom Javascript File -->
+    <script src="lib/easing/easing.js"></script><!-- Template Specisifc Custom Javascript File -->
     <script src="js/hiddenCards.js"></script>
     <script src="js/custom.js"></script>
-
     <script src="contactform/contactform.js"></script>
 </body>
 
