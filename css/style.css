@@ -1302,3 +1302,26 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 .info {
     font-size: 1rem;
 }
+
+/* transforms */
+
+.section-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-body {
+    text-align: center !important;
+}
+
+@media screen and (max-width:768px) and (min-width:767px) {
+    .card-img-top {
+        height: 200px !important;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .card-img-top {
+        height: 200px !important;
+    }
+}
